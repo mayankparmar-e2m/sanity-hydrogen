@@ -9,8 +9,12 @@ export default defineField({
     defineField({
       name: 'title',
       title: 'Title',
-      type: 'text',
-      rows: 3,
+      type: 'string',
+    }),
+    defineField({
+      name: 'subtitle',
+      title: 'Subtitle',
+      type: 'string',
     }),
     // Link
     defineField({
@@ -22,22 +26,21 @@ export default defineField({
     }),
     // Content
     defineField({
-      name: 'content',
-      title: 'Content',
-      type: 'array',
-      validation: (Rule) => Rule.max(1),
-      of: [
+      name: 'sliderImages',
+      title: 'Slider Image',
+      type: 'object',
+      fields: [
         {
-          name: 'productWithVariant',
-          title: 'Product with variant',
-          type: 'productWithVariant',
+          name: 'mobile_image',
+          title: 'Mobile Image',
+          type: 'mobile_image',
         },
         {
-          name: 'imageWithProductHotspots',
-          title: 'Image',
-          type: 'imageWithProductHotspots',
+          name: 'desktop_image',
+          title: 'Desktop Image',
+          type: 'desktop_image',
         },
-      ],
+      ]
     }),
   ],
 })

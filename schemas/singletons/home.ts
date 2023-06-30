@@ -22,9 +22,21 @@ export default defineField({
   fields: [
     // Hero
     defineField({
-      name: 'hero',
-      title: 'Hero',
-      type: 'hero.home',
+      name: 'heroSlider',
+      title: 'Hero Slider',
+      type: 'module.heroSlider',
+      group: 'editorial',
+    }),
+    defineField({
+      name: 'homeFeaturedProducts',
+      title: 'Feature Collections',
+      type: 'module.homeFeaturedProducts',
+      group: 'editorial',
+    }),
+    defineField({
+      name: 'homeGridCollection',
+      title: 'Home Grid Collection',
+      type: 'module.homeGridCollection',
       group: 'editorial',
     }),
     // Modules
@@ -33,7 +45,6 @@ export default defineField({
       title: 'Modules',
       type: 'array',
       of: [
-        {type: 'module.callout'},
         {type: 'module.callToAction'},
         {type: 'module.collection'},
         {type: 'module.image'},

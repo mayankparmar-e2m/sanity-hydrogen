@@ -77,12 +77,23 @@ import shopifyCollection from './objects/shopify/shopifyCollection'
 import shopifyCollectionRule from './objects/shopify/shopifyCollectionRule'
 import shopifyProduct from './objects/shopify/shopifyProduct'
 import shopifyProductVariant from './objects/shopify/shopifyProductVariant'
-
+import moduleHeroSliderfrom from  './objects/module/heroSlider'
+import MobileImage from  './objects/global/MobileImage'
+import DesktopImage from  './objects/global/DesktopImage'
 // Collections
 import collectionGroup from './objects/collection/group'
 import collectionLinks from './objects/collection/links'
-
+import homeFeaturedProducts from './objects/module/homeFeaturedProducts'
+import singleCollection from './objects/global/singleCollection'
+import homeGridCollection from './objects/module/homeGridCollection'
+import gridCollections from './snipets/gridCollections'
 const objects = [
+  homeGridCollection,
+  gridCollections,
+  singleCollection,
+  homeFeaturedProducts,
+  MobileImage,
+  DesktopImage,
   customProductOptionColor,
   customProductOptionColorObject,
   customProductOptionSize,
@@ -101,6 +112,8 @@ const objects = [
   accordionBody,
   accordionGroup,
   menu,
+  //modules
+  moduleHeroSliderfrom,
   moduleCallout,
   moduleCallToAction,
   moduleCollection,
